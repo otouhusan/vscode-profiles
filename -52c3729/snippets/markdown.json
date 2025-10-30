@@ -1,0 +1,22 @@
+{
+    "equation": {
+		"prefix": "equ",
+		"body": [
+			"$$",
+            "\t$1",
+			"$$"
+		],
+        "description": "equation for MD"
+	},
+    "$$ aligned $$": {
+		"prefix": "ali",
+		"body": [
+			"$$",
+            "\\begin{aligned}",
+            "\t$1",
+            "\\end{aligned}",
+			"$$"
+		],
+		"description": "align for MD"
+	}
+}

@@ -1,0 +1,38 @@
+{
+    "article": {
+        "prefix": "article",
+        "body": [
+            "@ARTICLE{",
+            "\t$1,",
+            "\tauthor=\"$2\",",
+            "\ttitle=\"$3\",",
+            "\tjournal=\"$4\",",
+            "\tvolume=\"$5\",",
+            "\tpages=\"$5\",",
+            "\tyear=$6",
+            "}"
+        ]
+    },
+    "book": {
+        "prefix": "book",
+        "body": [
+            "@BOOK{",
+            "\t$1,",
+            "\tauthor=\"$2\",",
+            "\ttitle=\"$3\",",
+            "\tpublisher=\"$4\",",
+            "\tyear=$5",
+            "}"
+        ]
+    },
+    "online entry": {
+        "prefix": "online",
+        "body": ["@ONLINE{$1,",
+            "title = {$2},",
+            "author = {$3},",
+            "url = {$4}",
+            "}"
+            ],
+        "description": "online bib format"
+    }
+}

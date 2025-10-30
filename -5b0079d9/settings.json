@@ -1,0 +1,164 @@
+{
+    "editor.fontSize": 20,
+    "editor.detectIndentation": false,
+    // "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[tex]": {
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.tabSize": 2
+    },
+    "[latex]": {
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.tabSize": 2,
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+    },
+    "[bibtex]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    },
+    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+    "latex-workshop.intellisense.package.enabled": true,
+    // "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk",
+                // "pwd",
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-lualatex",
+                // "-synctex=1",
+                // "-file-line-error",
+                "%DOCFILE%.tex",
+                // "-outdir=%OUTDIR%",
+            ],
+            // "env": {
+            //     "PATH": "/usr/local/texlive/2024/bin/x86_64-linux"
+            // }
+        },
+        {
+            "name": "pwd",
+            "command": "pwd",
+            "args": [],
+        },
+        // {
+        //     "name": "lualatex",
+        //     "command": "lualatex",
+        //     "args": [
+        //         "-synctex=1",
+        //         "-interaction=nonstopmode",
+        //         "-file-line-error",
+        //         "%DOCFILE%.tex"
+        //     ]
+        // }
+    ],
+    // "latex-workshop.latex.outDir": ".",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "latex-workshop.hover.preview.mathjax.extensions": [
+        "mathtools",
+        // "physics2",
+        // "braket",
+    ],
+    "latex-workshop.latex.autoClean.run": "onFailed",
+    "files.associations": {
+        ".latexmkrc": "perl",
+        "*.code-workspace": "c"
+    },
+    "editor.formatOnSave": false,
+    "latex-workshop.latexindent.path": "latexindent",
+    "latex-workshop.latexindent.args": [
+        "%TMPFILE%",
+        "-c=%DIR%/",
+        "-l",
+        "-r",
+    ],
+    "editor.accessibilitySupport": "off",
+    "editor.quickSuggestionsDelay": 10000,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        },
+        "Ubuntu-24.04 (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-24.04"
+            ]
+        }
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.ignoreMissingGitWarning": true,
+    "chat.commandCenter.enabled": false,
+    "workbench.colorTheme": "Cobalt2",
+    "print.folder.fileNames": true,
+    "print.folder.include": [],
+    "print.folder.exclude": [
+        "{bin,obj,out}",
+        "node_modules",
+        "data",
+        "**/*.{bin,exe,dll,hex,pdb,pdf,pfx,png,jpg,gif,bmp,suo,design}"
+    ],
+    "print.folder.maxLines": 1200,
+    "print.folder.maxFiles": 30,
+    "print.folder.includeFileList": false,
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "remote.autoForwardPortsSource": "hybrid",
+    "[c]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.stickyScroll.defaultModel": "foldingProviderModel",
+        "editor.suggest.insertMode": "replace"
+    },
+    "languages": [{
+        "id": "ipynb",
+        "extensions": [ ".ipynb"]
+    }
+],
+"julia.enableCrashReporter": false
+}

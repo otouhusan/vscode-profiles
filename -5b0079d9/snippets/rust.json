@@ -1,0 +1,31 @@
+{
+	"println!": {
+		"prefix": "print",
+		"body": [
+			"println!(\"$0\");",
+		],
+		"description": "println!"
+	},
+    "String::from": {
+		"prefix": "string",
+		"body": [
+			"String::from(\"$0\")",
+		],
+		"description": "String::from"
+	},
+    "#derive[]": {
+		"prefix": "derive",
+		"body": [
+			"#[derive($0)]",
+		],
+		"description": "add derive arttribute"
+	},
+    "dead code": {
+		"prefix": "deadcode",
+		"body": [
+			"#[allow(dead_code)]",
+		],
+		"description": "add #[allow(dead_code)]"
+	},
+    
+}

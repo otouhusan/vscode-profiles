@@ -1,0 +1,30 @@
+{
+	"waru": {
+		"prefix": "waru",
+		"body": [
+			"÷"
+		],
+		"description": "devine operator"
+	},
+    "sign": {
+		"prefix": "pl",
+		"body": [
+			"₊"
+		],
+		"description": "plus index"
+	},
+    "+ index": {
+        "prefix": "pl",
+        "body": [
+            "₊"
+        ],
+        "description": "plus index"
+    },
+    "- index": {
+        "prefix": "mi",
+        "body": [
+            "₋"
+        ],
+        "description": "minus index"
+    }
+}
